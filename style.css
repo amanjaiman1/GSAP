@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header{
+    height: 15vh;
+    background-color: red;
+}
+
+.links{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.content{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar{
+    background-color: green;
+    width: 15%;
+}
+
+.button{
+    align-self: center;
+}
+
+.startButton {
+    position: absolute;
+    opacity: 0;
+}
+
+.showStartButton {
+    opacity: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s;
+}
+
+.footer{
+    height: 15vh;
+    background-color: blue;
+}
