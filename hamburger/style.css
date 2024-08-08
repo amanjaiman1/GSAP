@@ -54,11 +54,24 @@ body{
     width: 40px;
     
 }
-.setImage{
-    animation: rotation 2s ease-in-out;
+.setImageFirst{
+    animation: rotation1 1s ease-out;
 }
 
-@keyframes rotation {
+@keyframes rotation1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.setImageLast{
+    animation: rotation2 1s ease-in-out;
+}
+
+@keyframes rotation2 {
     from {
       transform: rotate(0deg);
     }
@@ -66,3 +79,5 @@ body{
       transform: rotate(-360deg);
     }
 }
+
+

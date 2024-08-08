@@ -20,11 +20,14 @@ const closeMenu = () => {
 openButton.addEventListener('click', () => {
     openButton.classList.add('setButton');
     openMenu();
-    getImage.classList.remove('setImage');
+    getImage.classList.remove('setImageLast');
+    getImage.classList.add('setImageFirst');
+    
 })
 
 closeButton.addEventListener('click', () => {
-    getImage.classList.add('setImage');
+    getImage.classList.remove('setImageFirst');
+    getImage.classList.add('setImageLast');
     closeMenu();
     openButton.classList.remove('setButton');
 })
